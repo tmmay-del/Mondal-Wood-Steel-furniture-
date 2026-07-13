@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-51*9tqc^9co1jwu8y-03nl-qumy7c$g8k3x2w!q&1@5f&8uv7f
 DEBUG = False
 
 ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['yourusername.pythonanywhere.com']
 
 # Application definition
 
@@ -133,6 +133,7 @@ AUTHENTICATION_BACKENDS = [
     'furniture.backend.PhoneAuthBackend', # Change 'furniture_store' to your exact app name!
     'django.contrib.auth.backends.ModelBackend',
 ]
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['yourusername.pythonanywhere.com']
 import os
 
@@ -144,3 +145,5 @@ STATICFILES_DIRS = [
 # Where Django will dump all static files when you run 'collectstatic'
 # This folder is what you will point PythonAnywhere to later!
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+=======
+>>>>>>> e68b067cae272d4c3a1888f0a553fb1e0907e63d
